@@ -1,6 +1,6 @@
 rm(list=ls())
 
-#### The purpose of this code is to run a simplified version of Blackjack, single-player (no dealer)
+#### Purpose: This code runs a simplified version of Blackjack with classical rules, single-player (no dealer)
 #### 
 #### Author: Kenneth Rios
 #### Last Updated: 1/1/2019
@@ -36,7 +36,7 @@ Draw <- function(deck){
 
 # Convert card to numeric value
 Value <- function(card, live_aces){
-  # A card is a string, such as 'A???'
+  # A card is a string, such as 'A♠'
   
   if(substr(card, 1, nchar(card)-1) %in% c("J", "Q", "K")){
     # Faces are worth 10
