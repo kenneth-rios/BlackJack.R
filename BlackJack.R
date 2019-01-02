@@ -1,6 +1,10 @@
 rm(list=ls())
 
-#### The purpose of this code is
+#### The purpose of this code is to run a simplified version of Blackjack, single-player (no dealer)
+#### 
+#### Author: Kenneth Rios
+#### Last Updated: 1/1/2019
+
 
 ## Initialize deck
 # WARNING: RStudio has known issues handling the unicode characters for the suits when the code is compiled from Source. 
@@ -10,10 +14,10 @@ rm(list=ls())
 # clubs <- c("Ac", "2c", "3c", "4c", "5c", "6c", "7c", "8c", "9c", "10c", "Jc", "Qc", "Kc")
 # hearts <- c("Ah", "2h", "3h", "4h", "5h", "6h", "7h", "8h", "9h", "10h", "Jh", "Qh", "Kh")
 # spades <- c("As", "2s", "3s", "4s", "5s", "6s", "7s", "8s", "9s", "10s", "Js", "Qs", "Ks")
-diamonds <- c("A???", "2???", "3???", "4???", "5???", "6???", "7???", "8???", "9???", "10???", "J???", "Q???", "K???")
-clubs <- c("A???", "2???", "3???", "4???", "5???", "6???", "7???", "8???", "9???", "10???", "J???", "Q???", "K???")
-hearts <- c("A???", "2???", "3???", "4???", "5???", "6???", "7???", "8???", "9???", "10???", "J???", "Q???", "K???")
-spades <- c("A???", "2???", "3???", "4???", "5???", "6???", "7???", "8???", "9???", "10???", "J???", "Q???", "K???")
+diamonds <- c("A♦", "2♦", "3♦", "4♦", "5♦", "6♦", "7♦", "8♦", "9♦", "10♦", "J♦", "Q♦", "K♦")
+clubs <- c("A♣", "2♣", "3♣", "4♣", "5♣", "6♣", "7♣", "8♣", "9♣", "10♣", "J♣", "Q♣", "K♣")
+hearts <- c("A♥", "2♥", "3♥", "4♥", "5♥", "6♥", "7♥", "8♥", "9♥", "10♥", "J♥", "Q♥", "K♥")
+spades <- c("A♠", "2♠", "3♠", "4♠", "5♠", "6♠", "7♠", "8♠", "9♠", "10♠", "J♠", "Q♠", "K♠")
 
 startingDeck <- c(diamonds, clubs, hearts, spades)
 sum <- 0
@@ -172,7 +176,6 @@ BlackJack <- function(rounds=10){
     cat("Try better next time.")
   }
 }
-
 
 
 
