@@ -141,7 +141,7 @@ Round <- function(){
 
 
 
-# Play n rounds of Blackjack
+# Blackjack algorithm
 BlackJack <- function(rounds=10){
   
   n <- rounds
@@ -180,6 +180,6 @@ BlackJack <- function(rounds=10){
 
 
 
-# Play n rounds of Blackjack!
+# Play 100 rounds of Blackjack!
 BlackJack(100)
 
