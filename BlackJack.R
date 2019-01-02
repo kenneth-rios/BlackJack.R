@@ -24,7 +24,7 @@ sum <- 0
 
 
 
-# Randomly draw a card from the 52-card deck without replacement
+# Randomly draws a card from the 52-card deck without replacement
 Draw <- function(deck){
   card <- sample(deck, 1)
   deck <<- deck[-match(card, deck)]
@@ -34,7 +34,7 @@ Draw <- function(deck){
 
 
 
-# Convert card to numeric value
+# Converts a card to its numeric value
 Value <- function(card, live_aces){
   # A card is a string, such as 'A♠'
   
@@ -136,12 +136,13 @@ Round <- function(){
       cat(paste0("Oops! You busted! Your game score is ", as.character(gameScore), ".", "\n"))
       stop <- TRUE
     }
+      
   }
 }
 
 
 
-# Blackjack algorithm
+# Game algorithm
 BlackJack <- function(rounds=10){
   
   n <- rounds
