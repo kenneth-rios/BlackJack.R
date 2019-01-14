@@ -7,7 +7,7 @@ rm(list=ls())
 
 
 ## Initialize deck
-# WARNING: RStudio has known issues handling the unicode characters for the suits when the code is compiled from Source. 
+# WARNING: RStudio has known issues handling the unicode characters for the suits when the code is interpreted from Source. 
 # Instead, Select All from this script and then Run the entire code.
 
 # diamonds <- c("Ad", "2d", "3d", "4d", "5d", "6d", "7d", "8d", "9d", "10d", "Jd", "Qd", "Kd")
